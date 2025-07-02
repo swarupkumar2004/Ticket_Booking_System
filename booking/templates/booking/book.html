@@ -1,0 +1,9 @@
+<h2>Book a Service</h2>
+<form method="post">
+  {% csrf_token %}
+  <input type="hidden" name="user_id" value="{{ user_id }}">
+  Service Name: <input type="text" name="service_name"><br>
+  Date: <input type="date" name="booking_date"><br>
+  Time: <input type="time" name="booking_time"><br>
+  <button type="submit">Book</button>
+</form>
